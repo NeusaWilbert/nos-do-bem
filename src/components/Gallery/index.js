@@ -2,6 +2,8 @@ import React from "react";
 
 import Card from "../Card";
 
+import "./gallery.css";
+
 const Gallery = () => {
   const dogs = [
     {
@@ -33,7 +35,7 @@ const Gallery = () => {
   return (
     <>
       <h1>Para adoção</h1>
-      <div>
+      <div className="dog-list">
         {dogs.map((dog) => {
           return <Card dog={dog} />;
         })}

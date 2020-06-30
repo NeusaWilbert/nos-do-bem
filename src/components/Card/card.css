@@ -1,0 +1,10 @@
+.card {
+  margin: 20px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__dog-info {
+  padding-left: 5px;
+}
