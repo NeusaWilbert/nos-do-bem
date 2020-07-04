@@ -1,14 +1,21 @@
 import React from "react";
+import { Route, Switch } from "react-router";
+import { BrowserRouter } from "react-router-dom";
 
-import Gallery from "./components/Gallery";
+import Layout from "./components/Layout";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">Nos do Bem</header>
-      <Gallery />
-    </div>
-  );
-}
+import Home from "./pages/Home";
+
+const App = () => (
+  <div className="App">
+    <Layout>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
+    </Layout>
+  </div>
+);
 
 export default App;
