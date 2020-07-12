@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import Layout from "./components/Layout";
 
+import Facebook from "./pages/Facebook";
 import Home from "./pages/Home";
 
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/facebook" component={Facebook} />
         </Switch>
       </BrowserRouter>
     </Layout>
