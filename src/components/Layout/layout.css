@@ -3,11 +3,25 @@
 }
 
 .layout__header {
+  background-image: url("dog-draw.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100%;
-  height: 70px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   border-bottom: 1px solid black;
+}
+
+.layout__footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-top: 1px solid black;
 }
